@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'error')}">
+<title>Page not found</title>
+<body>
+<div class="container-fluid">
+    <div class="container xd-container">
+        <h1>The page you've request couldn't be found :(</h1>
+        <center>
+            <img th:src="@{resources/images/oops.jpg}"/>
+        </center>
+    </div>
+</div>
+</body>
+
+</html>

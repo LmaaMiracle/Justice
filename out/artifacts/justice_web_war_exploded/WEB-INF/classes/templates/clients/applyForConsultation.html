@@ -1,0 +1,74 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      th:replace="~{fragments/layout :: layout (~{::body},'clients')}">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<center>
+    <h1><b>Apply for consultation</b></h1> <br>
+    <h1>Already been to our company? <br> Find your account and create a new issue!</h1>
+</center>
+
+
+<center>
+    <button class="open-button; btn-default" style="position: center; top: 50%; height: 50px;
+        width: 200px;" onclick="openForm()">Find my applyes!
+    </button>
+</center>
+<br><br>
+<div class="form-popup" id="find-form" style="display: none">
+    <form th:object="${client}" th:action="@{/clients}" method="get"
+          class="form-horizontal" id="search-client-form">
+        <div class="form-group">
+            <div class="control-group" id="lastNameGroup">
+                <label class="col-sm-2 control-label">Last name </label>
+                <div class="col-sm-10">
+                    <input class="form-control" th:field="*{authCode}" placeholder="last name" required size="30"
+                           maxlength="80"/>
+                    <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                            <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Error</p>
+                    </div>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Find
+                    applications
+                </button>
+            </div>
+        </div>
+        <br><br>
+        <button type="button" class="btn btn-danger" style="position: center; top: 50%; height: 40px;
+            width: 155px;" onclick="closeForm()">Close
+        </button>
+    </form>
+</div>
+
+<script>
+    function closeForm() {
+        document.getElementById("find-form").style.display = "none";
+    }
+
+    function openForm() {
+        document.getElementById("find-form").style.display = "block";
+    }
+</script>
+
+
+
+<br>
+<br>
+<center>
+    <h1>New here?</h1>
+    <form action="/clients/new">
+    <button class="btn btn-default" style="position: center; top: 50%; height: 50px;
+            width: 200px;" th:href="@{/clients/new}">Create an apply </button>
+    </form>
+</center>
+</body>
+</html>

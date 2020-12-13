@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>yarchuk.coursework.justice.repository.UserRepository</OriginalElement>
+  <nodes>
+    <node x="2013.841240388402" y="2633.0">yarchuk.coursework.justice.service.SpecialityService</node>
+    <node x="3489.0610006786114" y="11.0">lombok.Setter</node>
+    <node x="2960.0610006786114" y="11.0">lombok.Getter</node>
+    <node x="4472.567191142185" y="34.0">javax.persistence.MappedSuperclass</node>
+    <node x="4400.6377785724335" y="2555.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="3312.827035842947" y="2943.0">yarchuk.coursework.justice.сontroller.IssueController</node>
+    <node x="2879.997490388402" y="2632.0">org.springframework.stereotype.Controller</node>
+    <node x="3352.872490388402" y="1561.0">yarchuk.coursework.justice.model.Issue</node>
+    <node x="3195.997490388402" y="2633.0">yarchuk.coursework.justice.service.IssueTypeService</node>
+    <node x="930.2579070550687" y="2128.0">org.springframework.data.repository.CrudRepository</node>
+    <node x="47.640287994832306" y="850.0">yarchuk.coursework.justice.model.User</node>
+    <node x="4041.6377785724335" y="2610.0">yarchuk.coursework.justice.service.ClientService</node>
+    <node x="2304.716240388402" y="2633.0">yarchuk.coursework.justice.service.ConsultationService</node>
+    <node x="116.1402879948323" y="2998.0">yarchuk.coursework.justice.сontroller.AccountController</node>
+    <node x="919.2579070550687" y="1737.0">org.springframework.data.repository.NoRepositoryBean</node>
+    <node x="4964.887778572434" y="2239.0">java.lang.FunctionalInterface</node>
+    <node x="2682.3422506786114" y="419.0">javax.persistence.Table</node>
+    <node x="4236.760129264673" y="1004.0">yarchuk.coursework.justice.model.Person</node>
+    <node x="1034.2033617897225" y="1026.0">yarchuk.coursework.justice.model.Speciality</node>
+    <node x="1644.5922506786114" y="2633.0">yarchuk.coursework.justice.repository.IssueRepository</node>
+    <node x="1099.2579070550687" y="1737.0">org.springframework.data.repository.Repository</node>
+    <node x="2421.247490388402" y="2998.0">yarchuk.coursework.justice.сontroller.ConsultationController</node>
+    <node x="56.0" y="3461.0">yarchuk.coursework.justice.JusticeApplication</node>
+    <node x="1144.6448118169733" y="2633.0">yarchuk.coursework.justice.repository.LawyerRepository</node>
+    <node x="917.2033617897225" y="1070.0">org.springframework.stereotype.Indexed</node>
+    <node x="3931.561716566261" y="420.0">yarchuk.coursework.justice.model.BaseEntity</node>
+    <node x="2520.997490388402" y="2610.0">yarchuk.coursework.justice.repository.ClientRepository</node>
+    <node x="3202.497490388402" y="1015.0">yarchuk.coursework.justice.model.IssueType</node>
+    <node x="1927.8829070550687" y="463.0">javax.persistence.Entity</node>
+    <node x="4780.137778572434" y="3020.0">yarchuk.coursework.justice.сontroller.IndexController</node>
+    <node x="1854.841240388402" y="2633.0">yarchuk.coursework.justice.service.LawyerService</node>
+    <node x="3042.997490388402" y="2633.0">yarchuk.coursework.justice.service.IssueService</node>
+    <node x="0.0" y="3292.0">org.springframework.boot.autoconfigure.SpringBootApplication</node>
+    <node x="1808.466240388402" y="3031.0">yarchuk.coursework.justice.сontroller.LawyerController</node>
+    <node x="4959.387778572434" y="2632.0">org.springframework.boot.web.servlet.error.ErrorController</node>
+    <node x="419.0152879948323" y="2633.0">yarchuk.coursework.justice.repository.SpecialityRepository</node>
+    <node x="1422.5922506786114" y="2633.0">yarchuk.coursework.justice.repository.ConsultationRepository</node>
+    <node x="4302.1377785724335" y="2932.0">yarchuk.coursework.justice.сontroller.ClientController</node>
+    <node x="4022.7172506786114" y="34.0">java.io.Serializable</node>
+    <node x="1311.2033617897225" y="430.0">lombok.Builder</node>
+    <node x="2953.497490388402" y="2194.0">yarchuk.coursework.justice.service.CrudService</node>
+    <node x="2372.216240388402" y="960.0">yarchuk.coursework.justice.model.Consultation</node>
+    <node x="133.6402879948323" y="2632.0">yarchuk.coursework.justice.repository.UserRepository</node>
+    <node x="3207.0610006786114" y="11.0">lombok.AllArgsConstructor</node>
+    <node x="1407.341240388402" y="1693.0">yarchuk.coursework.justice.model.Lawyer</node>
+    <node x="695.68647848364" y="2633.0">yarchuk.coursework.justice.repository.IssueTypeRepository</node>
+    <node x="4032.5127785724335" y="2074.0">yarchuk.coursework.justice.model.Client</node>
+    <node x="3736.0610006786114" y="0.0">lombok.NoArgsConstructor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="yarchuk.coursework.justice.repository.SpecialityRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="47.0" y="-25.5" />
+      <point x="560.0152879948323" y="2525.0" />
+      <point x="995.400764197926" y="2525.0" />
+      <point x="-86.85714285714266" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="javax.persistence.Table">
+      <point x="0.0" y="-201.5" />
+      <point x="3515.372490388402" y="1471.0" />
+      <point x="3586.1235006786114" y="1471.0" />
+      <point x="3586.1235006786114" y="630.0" />
+      <point x="2926.699393535754" y="630.0" />
+      <point x="88.85714285714266" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.LawyerRepository" target="yarchuk.coursework.justice.model.Lawyer">
+      <point x="40.0" y="-25.5" />
+      <point x="1264.6448118169733" y="2535.0" />
+      <point x="1484.1745737217352" y="2535.0" />
+      <point x="1484.1745737217352" y="2054.0" />
+      <point x="1458.0079070550685" y="2054.0" />
+      <point x="-101.33333333333348" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="yarchuk.coursework.justice.model.Issue">
+      <point x="-95.27272727272725" y="-190.5" />
+      <point x="4068.2400512997065" y="2044.0" />
+      <point x="3587.594712610624" y="2044.0" />
+      <point x="72.22222222222217" y="201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.LawyerService" target="yarchuk.coursework.justice.model.Lawyer">
+      <point x="-34.75" y="-25.5" />
+      <point x="1889.591240388402" y="2044.0" />
+      <point x="1660.6745737217354" y="2044.0" />
+      <point x="101.33333333333348" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.User" target="javax.persistence.Table">
+      <point x="85.125" y="-245.5" />
+      <point x="246.2652879948323" y="720.0" />
+      <point x="2704.556536392897" y="720.0" />
+      <point x="-133.28571428571422" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="lombok.Setter">
+      <point x="75.0" y="-201.5" />
+      <point x="3590.372490388402" y="1501.0" />
+      <point x="3921.061716566261" y="1501.0" />
+      <point x="3921.061716566261" y="259.0" />
+      <point x="3627.7832229008336" y="259.0" />
+      <point x="25.22222222222217" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ConsultationController" target="yarchuk.coursework.justice.service.ConsultationService">
+      <point x="-158.4375" y="-91.5" />
+      <point x="2516.309990388402" y="2852.0" />
+      <point x="2349.966240388402" y="2852.0" />
+      <point x="-45.25" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="javax.persistence.MappedSuperclass">
+      <point x="65.41666666666674" y="-69.5" />
+      <point x="4075.4783832329276" y="399.0" />
+      <point x="4512.567191142185" y="399.0" />
+      <point x="-40.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.ClientService" target="yarchuk.coursework.justice.model.Client">
+      <point x="84.75" y="-48.5" />
+      <point x="4295.8877785724335" y="2535.0" />
+      <point x="4196.2627785724335" y="2535.0" />
+      <point x="32.75" y="190.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="lombok.Getter">
+      <point x="-31.42857142857156" y="-91.5" />
+      <point x="4315.331557836102" y="580.0" />
+      <point x="4204.451090260745" y="580.0" />
+      <point x="4204.451090260745" y="179.0" />
+      <point x="3174.4498895675006" y="179.0" />
+      <point x="100.88888888888914" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="lombok.Getter">
+      <point x="25.0" y="-201.5" />
+      <point x="3540.372490388402" y="1481.0" />
+      <point x="3899.061716566261" y="1481.0" />
+      <point x="3899.061716566261" y="279.0" />
+      <point x="3098.7832229008336" y="279.0" />
+      <point x="25.22222222222217" y="48.5" />
+    </edge>
+    <edge source="org.springframework.boot.web.servlet.error.ErrorController" target="java.lang.FunctionalInterface">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.ClientService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="-84.75" y="-48.5" />
+      <point x="4126.3877785724335" y="2505.0" />
+      <point x="3116.6641570550687" y="2505.0" />
+      <point x="74.16666666666674" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="lombok.AllArgsConstructor">
+      <point x="-14.1875" y="-80.5" />
+      <point x="3301.809990388402" y="790.0" />
+      <point x="3313.216240388402" y="790.0" />
+      <point x="3313.216240388402" y="309.0" />
+      <point x="3338.0610006786114" y="309.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.UserRepository" target="yarchuk.coursework.justice.model.User">
+      <point x="-65.5" y="-26.5" />
+      <point x="199.1402879948323" y="1541.0" />
+      <point x="217.8902879948323" y="1541.0" />
+      <point x="56.75" y="245.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="lombok.Getter">
+      <point x="-42.5625" y="-80.5" />
+      <point x="3273.434990388402" y="640.0" />
+      <point x="3073.5610006786114" y="640.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="lombok.AllArgsConstructor">
+      <point x="50.0" y="-201.5" />
+      <point x="3565.372490388402" y="1491.0" />
+      <point x="3910.061716566261" y="1491.0" />
+      <point x="3910.061716566261" y="269.0" />
+      <point x="3375.489572107183" y="269.0" />
+      <point x="37.42857142857156" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="lombok.Setter">
+      <point x="46.5" y="-135.5" />
+      <point x="2542.716240388402" y="780.0" />
+      <point x="3025.8422506786114" y="780.0" />
+      <point x="3025.8422506786114" y="349.0" />
+      <point x="3577.3387784563893" y="349.0" />
+      <point x="-25.22222222222217" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.model.Issue">
+      <point x="21.125" y="-146.5" />
+      <point x="3587.452035842947" y="2832.0" />
+      <point x="3428.247490388402" y="2832.0" />
+      <point x="3428.247490388402" y="2054.0" />
+      <point x="3479.261379277291" y="2054.0" />
+      <point x="-36.111111111111086" y="201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="lombok.Getter">
+      <point x="-15.5" y="-135.5" />
+      <point x="2480.716240388402" y="760.0" />
+      <point x="3003.8422506786114" y="760.0" />
+      <point x="3003.8422506786114" y="279.0" />
+      <point x="3048.3387784563893" y="279.0" />
+      <point x="-25.22222222222217" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="yarchuk.coursework.justice.model.Person">
+      <point x="71.4545454545455" y="-190.5" />
+      <point x="4234.967324026979" y="2034.0" />
+      <point x="4377.92679593134" y="2034.0" />
+      <point x="4377.92679593134" y="1541.0" />
+      <point x="4346.760129264673" y="1541.0" />
+      <point x="0.0" y="91.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="lombok.Setter">
+      <point x="14.1875" y="-80.5" />
+      <point x="3330.184990388402" y="780.0" />
+      <point x="3450.966240388402" y="780.0" />
+      <point x="3450.966240388402" y="359.0" />
+      <point x="3602.5610006786114" y="359.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.service.ClientService">
+      <point x="190.125" y="-146.5" />
+      <point x="3756.452035842947" y="2902.0" />
+      <point x="4168.7627785724335" y="2902.0" />
+      <point x="-42.375" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.User" target="lombok.Setter">
+      <point x="-28.375" y="-245.5" />
+      <point x="132.7652879948323" y="319.0" />
+      <point x="3501.6721117897227" y="319.0" />
+      <point x="-100.88888888888869" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="yarchuk.coursework.justice.model.IssueType">
+      <point x="-50.0" y="-201.5" />
+      <point x="3465.372490388402" y="1371.0" />
+      <point x="3361.397490388402" y="1371.0" />
+      <point x="45.40000000000009" y="80.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.IssueService" target="yarchuk.coursework.justice.model.Issue">
+      <point x="33.0" y="-25.5" />
+      <point x="3141.997490388402" y="2044.0" />
+      <point x="3443.1502681661796" y="2044.0" />
+      <point x="-72.22222222222217" y="201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="lombok.AllArgsConstructor">
+      <point x="0.0" y="-91.5" />
+      <point x="4346.760129264673" y="169.0" />
+      <point x="3450.346714964325" y="169.0" />
+      <point x="112.28571428571377" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="lombok.AllArgsConstructor">
+      <point x="15.5" y="-135.5" />
+      <point x="2511.716240388402" y="770.0" />
+      <point x="3014.8422506786114" y="770.0" />
+      <point x="3014.8422506786114" y="309.0" />
+      <point x="3300.63242925004" y="309.0" />
+      <point x="-37.42857142857156" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="javax.persistence.Table">
+      <point x="-70.9375" y="-80.5" />
+      <point x="3245.059990388402" y="650.0" />
+      <point x="2882.270822107183" y="650.0" />
+      <point x="44.42857142857156" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.SpecialityService" target="yarchuk.coursework.justice.model.Speciality">
+      <point x="-41.75" y="-25.5" />
+      <point x="2055.591240388402" y="1421.0" />
+      <point x="1229.2033617897225" y="1421.0" />
+      <point x="78.0" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="javax.persistence.Table">
+      <point x="101.33333333333348" y="-69.5" />
+      <point x="1660.6745737217354" y="1481.0" />
+      <point x="2006.8829070550687" y="1481.0" />
+      <point x="2006.8829070550687" y="740.0" />
+      <point x="2793.41367925004" y="740.0" />
+      <point x="-44.42857142857156" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ConsultationController" target="yarchuk.coursework.justice.service.IssueService">
+      <point x="158.4375" y="-91.5" />
+      <point x="2833.184990388402" y="2902.0" />
+      <point x="3059.497490388402" y="2902.0" />
+      <point x="-49.5" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.UserRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="65.5" y="-26.5" />
+      <point x="330.1402879948323" y="2515.0" />
+      <point x="951.9721927693545" y="2515.0" />
+      <point x="-130.28571428571422" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.User" target="lombok.Getter">
+      <point x="-85.125" y="-245.5" />
+      <point x="76.0152879948323" y="830.0" />
+      <point x="0.0" y="830.0" />
+      <point x="0.0" y="249.0" />
+      <point x="2972.6721117897227" y="249.0" />
+      <point x="-100.88888888888869" y="48.5" />
+    </edge>
+    <edge source="org.springframework.data.repository.Repository" target="org.springframework.stereotype.Indexed">
+      <point x="0.0" y="-25.5" />
+      <point x="1158.2579070550687" y="1501.0" />
+      <point x="965.7033617897225" y="1501.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="lombok.Setter">
+      <point x="31.42857142857133" y="-91.5" />
+      <point x="4378.188700693245" y="810.0" />
+      <point x="4478.811716566261" y="810.0" />
+      <point x="4478.811716566261" y="159.0" />
+      <point x="3703.4498895675" y="159.0" />
+      <point x="100.88888888888869" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.service.IssueService">
+      <point x="-190.125" y="-146.5" />
+      <point x="3376.202035842947" y="2882.0" />
+      <point x="3125.497490388402" y="2882.0" />
+      <point x="16.5" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="lombok.NoArgsConstructor">
+      <point x="119.09090909090901" y="-190.5" />
+      <point x="4282.6036876633425" y="2054.0" />
+      <point x="4672.679772121816" y="2054.0" />
+      <point x="4672.679772121816" y="139.0" />
+      <point x="3981.6860006786114" y="139.0" />
+      <point x="114.625" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="yarchuk.coursework.justice.model.Consultation">
+      <point x="-100.0" y="-201.5" />
+      <point x="3415.372490388402" y="1391.0" />
+      <point x="2567.0733832455444" y="1391.0" />
+      <point x="70.85714285714266" y="135.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="lombok.AllArgsConstructor">
+      <point x="-39.25" y="-69.5" />
+      <point x="3970.811716566261" y="239.0" />
+      <point x="3412.9181435357546" y="239.0" />
+      <point x="74.85714285714312" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="lombok.NoArgsConstructor">
+      <point x="62.85714285714289" y="-91.5" />
+      <point x="4409.617272121816" y="820.0" />
+      <point x="4581.567191142185" y="820.0" />
+      <point x="4581.567191142185" y="149.0" />
+      <point x="3948.9360006786114" y="149.0" />
+      <point x="81.875" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.ClientRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-84.75" y="-48.5" />
+      <point x="2605.747490388402" y="2475.0" />
+      <point x="1212.543621340783" y="2475.0" />
+      <point x="130.28571428571422" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="yarchuk.coursework.justice.model.BaseEntity">
+      <point x="-62.85714285714289" y="-91.5" />
+      <point x="4283.902986407531" y="590.0" />
+      <point x="4078.749216566261" y="590.0" />
+      <point x="68.6875" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="lombok.Setter">
+      <point x="-13.083333333333258" y="-69.5" />
+      <point x="3996.9783832329276" y="229.0" />
+      <point x="3653.005445123056" y="229.0" />
+      <point x="50.44444444444434" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.IssueRepository" target="yarchuk.coursework.justice.model.Issue">
+      <point x="38.25" y="-25.5" />
+      <point x="1759.3422506786114" y="2485.0" />
+      <point x="2283.216240388402" y="2485.0" />
+      <point x="2283.216240388402" y="2024.0" />
+      <point x="3370.9280459439574" y="2024.0" />
+      <point x="-144.44444444444457" y="201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="lombok.NoArgsConstructor">
+      <point x="150.0" y="-201.5" />
+      <point x="3665.372490388402" y="1531.0" />
+      <point x="4099.061716566261" y="1531.0" />
+      <point x="4099.061716566261" y="209.0" />
+      <point x="3916.1860006786114" y="209.0" />
+      <point x="49.125" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.ConsultationRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-50.5" y="-25.5" />
+      <point x="1473.0922506786114" y="2525.0" />
+      <point x="1125.6864784836403" y="2525.0" />
+      <point x="43.42857142857156" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ClientController" target="yarchuk.coursework.justice.service.ClientService">
+      <point x="-91.60000000000002" y="-157.5" />
+      <point x="4439.537778572434" y="2802.0" />
+      <point x="4253.5127785724335" y="2802.0" />
+      <point x="42.375" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.IssueTypeRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="45.25" y="-25.5" />
+      <point x="831.43647848364" y="2535.0" />
+      <point x="1038.8293356264971" y="2535.0" />
+      <point x="-43.42857142857156" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="yarchuk.coursework.justice.model.Speciality">
+      <point x="-135.1111111111113" y="-69.5" />
+      <point x="1424.2301292772906" y="1491.0" />
+      <point x="1151.2033617897225" y="1491.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="javax.persistence.Entity">
+      <point x="43.875" y="-69.5" />
+      <point x="1195.0783617897225" y="700.0" />
+      <point x="1957.025764197926" y="700.0" />
+      <point x="-38.85714285714266" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Person" target="javax.persistence.MappedSuperclass">
+      <point x="94.28571428571422" y="-91.5" />
+      <point x="4441.045843550388" y="830.0" />
+      <point x="4592.567191142185" y="830.0" />
+      <point x="40.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="lombok.Builder">
+      <point x="14.625" y="-69.5" />
+      <point x="1165.8283617897225" y="680.0" />
+      <point x="1349.036695123056" y="680.0" />
+      <point x="-75.66666666666652" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.LawyerController" target="yarchuk.coursework.justice.service.LawyerService">
+      <point x="30.125" y="-58.5" />
+      <point x="34.75" y="25.5" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.NoRepositoryBean">
+      <point x="-76.0" y="-136.5" />
+      <point x="1006.2579070550687" y="2054.0" />
+      <point x="999.2579070550687" y="2054.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="yarchuk.coursework.justice.model.BaseEntity">
+      <point x="99.3125" y="-80.5" />
+      <point x="3415.309990388402" y="830.0" />
+      <point x="4000.249216566261" y="830.0" />
+      <point x="-9.8125" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="lombok.Getter">
+      <point x="23.818181818181756" y="-190.5" />
+      <point x="4187.3309603906155" y="1994.0" />
+      <point x="4132.061716566261" y="1994.0" />
+      <point x="4132.061716566261" y="199.0" />
+      <point x="3149.227667345278" y="199.0" />
+      <point x="75.66666666666652" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.AccountController" target="org.springframework.stereotype.Controller">
+      <point x="99.0" y="-91.5" />
+      <point x="363.6402879948323" y="2872.0" />
+      <point x="2891.9141570550687" y="2872.0" />
+      <point x="-59.58333333333326" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.model.IssueType">
+      <point x="-105.625" y="-146.5" />
+      <point x="3460.702035842947" y="2862.0" />
+      <point x="3185.497490388402" y="2862.0" />
+      <point x="3185.497490388402" y="1531.0" />
+      <point x="3270.5974903884016" y="1531.0" />
+      <point x="-45.40000000000009" y="80.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ConsultationController" target="org.springframework.stereotype.Controller">
+      <point x="95.0625" y="-91.5" />
+      <point x="2769.809990388402" y="2892.0" />
+      <point x="2939.580823721735" y="2892.0" />
+      <point x="-11.916666666666742" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="lombok.Setter">
+      <point x="47.63636363636374" y="-190.5" />
+      <point x="4211.1491422087975" y="1984.0" />
+      <point x="4143.061716566261" y="1984.0" />
+      <point x="4143.061716566261" y="189.0" />
+      <point x="3678.227667345278" y="189.0" />
+      <point x="75.66666666666652" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ClientController" target="yarchuk.coursework.justice.model.Client">
+      <point x="183.20000000000005" y="-157.5" />
+      <point x="4714.337778572433" y="2912.0" />
+      <point x="4765.675278572434" y="2912.0" />
+      <point x="4765.675278572434" y="2525.0" />
+      <point x="4261.7627785724335" y="2525.0" />
+      <point x="98.25" y="190.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="yarchuk.coursework.justice.model.BaseEntity">
+      <point x="108.5" y="-135.5" />
+      <point x="2604.716240388402" y="810.0" />
+      <point x="3960.999216566261" y="810.0" />
+      <point x="-49.0625" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IndexController" target="org.springframework.boot.web.servlet.error.ErrorController">
+      <point x="91.75" y="-69.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.AccountController" target="yarchuk.coursework.justice.repository.UserRepository">
+      <point x="0.0" y="-91.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ConsultationController" target="yarchuk.coursework.justice.model.Issue">
+      <point x="31.6875" y="-91.5" />
+      <point x="2706.434990388402" y="2822.0" />
+      <point x="2510.497490388402" y="2822.0" />
+      <point x="2510.497490388402" y="2034.0" />
+      <point x="3407.0391570550687" y="2034.0" />
+      <point x="-108.33333333333326" y="201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.IssueTypeService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="-40.0" y="-25.5" />
+      <point x="3235.997490388402" y="2515.0" />
+      <point x="3086.997490388402" y="2515.0" />
+      <point x="44.5" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="javax.persistence.Table">
+      <point x="0.0" y="-190.5" />
+      <point x="4163.5127785724335" y="2004.0" />
+      <point x="4121.061716566261" y="2004.0" />
+      <point x="4121.061716566261" y="610.0" />
+      <point x="2971.1279649643257" y="610.0" />
+      <point x="133.28571428571422" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="lombok.Getter">
+      <point x="-102.375" y="-69.5" />
+      <point x="1048.8283617897225" y="670.0" />
+      <point x="1076.2033617897225" y="670.0" />
+      <point x="1076.2033617897225" y="259.0" />
+      <point x="2997.894334011945" y="259.0" />
+      <point x="-75.66666666666652" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.ClientRepository" target="yarchuk.coursework.justice.model.Client">
+      <point x="84.75" y="-48.5" />
+      <point x="2775.247490388402" y="2525.0" />
+      <point x="4065.2627785724335" y="2525.0" />
+      <point x="-98.25" y="190.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.LawyerController" target="org.springframework.stereotype.Controller">
+      <point x="90.375" y="-58.5" />
+      <point x="2019.341240388402" y="2882.0" />
+      <point x="2915.747490388402" y="2882.0" />
+      <point x="-35.75" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="lombok.NoArgsConstructor">
+      <point x="33.77777777777783" y="-69.5" />
+      <point x="1593.1190181661798" y="1441.0" />
+      <point x="1548.7033617897225" y="1441.0" />
+      <point x="1548.7033617897225" y="379.0" />
+      <point x="3785.1860006786114" y="379.0" />
+      <point x="-81.875" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.LawyerRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-40.0" y="-25.5" />
+      <point x="1184.6448118169733" y="2535.0" />
+      <point x="1082.2579070550687" y="2535.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="javax.persistence.Table">
+      <point x="73.125" y="-69.5" />
+      <point x="1224.3283617897225" y="730.0" />
+      <point x="2748.985107821469" y="730.0" />
+      <point x="-88.85714285714266" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="lombok.NoArgsConstructor">
+      <point x="42.5625" y="-80.5" />
+      <point x="3358.559990388402" y="790.0" />
+      <point x="3580.528740388402" y="790.0" />
+      <point x="3580.528740388402" y="399.0" />
+      <point x="3850.6860006786114" y="399.0" />
+      <point x="-16.375" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.IssueTypeRepository" target="yarchuk.coursework.justice.model.IssueType">
+      <point x="-45.25" y="-25.5" />
+      <point x="740.93647848364" y="1521.0" />
+      <point x="3225.197490388402" y="1521.0" />
+      <point x="-90.80000000000018" y="80.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="javax.persistence.Entity">
+      <point x="-150.0" y="-201.5" />
+      <point x="3365.372490388402" y="1411.0" />
+      <point x="1995.8829070550687" y="1411.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="lombok.NoArgsConstructor">
+      <point x="77.5" y="-135.5" />
+      <point x="2573.716240388402" y="790.0" />
+      <point x="3036.8422506786114" y="790.0" />
+      <point x="3036.8422506786114" y="389.0" />
+      <point x="3817.9360006786114" y="389.0" />
+      <point x="-49.125" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="lombok.AllArgsConstructor">
+      <point x="-73.125" y="-69.5" />
+      <point x="1078.0783617897225" y="680.0" />
+      <point x="1087.2033617897225" y="680.0" />
+      <point x="1087.2033617897225" y="289.0" />
+      <point x="3225.775286392897" y="289.0" />
+      <point x="-112.28571428571422" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="lombok.Getter">
+      <point x="-65.41666666666674" y="-69.5" />
+      <point x="3944.6450498995946" y="249.0" />
+      <point x="3124.005445123056" y="249.0" />
+      <point x="50.44444444444434" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="lombok.NoArgsConstructor">
+      <point x="13.083333333333258" y="-69.5" />
+      <point x="4023.1450498995946" y="219.0" />
+      <point x="3883.4360006786114" y="219.0" />
+      <point x="16.375" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="yarchuk.coursework.justice.model.Person">
+      <point x="135.1111111111113" y="-69.5" />
+      <point x="1694.4523514995133" y="1541.0" />
+      <point x="4273.42679593134" y="1541.0" />
+      <point x="-73.33333333333326" y="91.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.ConsultationService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="45.25" y="-25.5" />
+      <point x="2440.466240388402" y="2515.0" />
+      <point x="3027.6641570550687" y="2515.0" />
+      <point x="-14.833333333333258" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ClientController" target="org.springframework.stereotype.Controller">
+      <point x="-183.20000000000005" y="-157.5" />
+      <point x="4347.937778572434" y="2812.0" />
+      <point x="2987.247490388402" y="2812.0" />
+      <point x="35.75" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="lombok.Setter">
+      <point x="-43.875" y="-69.5" />
+      <point x="1107.3283617897225" y="680.0" />
+      <point x="1098.2033617897225" y="680.0" />
+      <point x="1098.2033617897225" y="329.0" />
+      <point x="3526.894334011945" y="329.0" />
+      <point x="-75.66666666666652" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ConsultationController" target="yarchuk.coursework.justice.model.Consultation">
+      <point x="-31.6875" y="-91.5" />
+      <point x="2643.059990388402" y="2832.0" />
+      <point x="2496.216240388402" y="2832.0" />
+      <point x="0.0" y="135.5" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.Repository">
+      <point x="76.0" y="-136.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.ConsultationRepository" target="yarchuk.coursework.justice.model.Consultation">
+      <point x="50.5" y="-25.5" />
+      <point x="1574.0922506786114" y="2535.0" />
+      <point x="1721.841240388402" y="2535.0" />
+      <point x="1721.841240388402" y="1491.0" />
+      <point x="2389.9305261026875" y="1491.0" />
+      <point x="-106.28571428571422" y="135.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="javax.persistence.Entity">
+      <point x="-77.5" y="-135.5" />
+      <point x="2418.716240388402" y="670.0" />
+      <point x="2015.3114784836403" y="670.0" />
+      <point x="19.42857142857156" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IndexController" target="org.springframework.stereotype.Controller">
+      <point x="-91.75" y="-69.5" />
+      <point x="4871.887778572434" y="2782.0" />
+      <point x="3011.080823721735" y="2782.0" />
+      <point x="59.58333333333326" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.User" target="javax.persistence.Entity">
+      <point x="28.375" y="-245.5" />
+      <point x="189.5152879948323" y="690.0" />
+      <point x="1937.5971927693545" y="690.0" />
+      <point x="-58.28571428571422" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="lombok.NoArgsConstructor">
+      <point x="-14.625" y="-69.5" />
+      <point x="1136.5783617897225" y="670.0" />
+      <point x="1109.2033617897225" y="670.0" />
+      <point x="1109.2033617897225" y="369.0" />
+      <point x="3752.4360006786114" y="369.0" />
+      <point x="-114.625" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="lombok.Setter">
+      <point x="-33.77777777777783" y="-69.5" />
+      <point x="1525.5634626106241" y="1461.0" />
+      <point x="1300.7033617897225" y="1461.0" />
+      <point x="1300.7033617897225" y="339.0" />
+      <point x="3552.116556234167" y="339.0" />
+      <point x="-50.44444444444434" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.IssueType" target="javax.persistence.Entity">
+      <point x="-99.3125" y="-80.5" />
+      <point x="3216.684990388402" y="660.0" />
+      <point x="2034.7400499122114" y="660.0" />
+      <point x="38.85714285714266" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.IssueRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-38.25" y="-25.5" />
+      <point x="1682.8422506786114" y="2515.0" />
+      <point x="1169.1150499122114" y="2515.0" />
+      <point x="86.85714285714266" y="136.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="lombok.Builder">
+      <point x="0.0" y="-69.5" />
+      <point x="1559.341240388402" y="1451.0" />
+      <point x="1424.7033617897225" y="1451.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="lombok.AllArgsConstructor">
+      <point x="-67.55555555555566" y="-69.5" />
+      <point x="1491.7856848328463" y="1471.0" />
+      <point x="1289.7033617897225" y="1471.0" />
+      <point x="1289.7033617897225" y="299.0" />
+      <point x="3263.203857821469" y="299.0" />
+      <point x="-74.85714285714266" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.SpecialityService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="41.75" y="-25.5" />
+      <point x="2139.091240388402" y="2505.0" />
+      <point x="2997.997490388402" y="2505.0" />
+      <point x="-44.5" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Speciality" target="yarchuk.coursework.justice.model.BaseEntity">
+      <point x="102.375" y="-69.5" />
+      <point x="1253.5783617897225" y="800.0" />
+      <point x="3941.374216566261" y="800.0" />
+      <point x="-68.6875" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="lombok.Builder">
+      <point x="-108.5" y="-135.5" />
+      <point x="2387.716240388402" y="680.0" />
+      <point x="1500.370028456389" y="680.0" />
+      <point x="75.66666666666652" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.service.IssueTypeService">
+      <point x="-21.125" y="-146.5" />
+      <point x="3545.202035842947" y="2842.0" />
+      <point x="3315.997490388402" y="2842.0" />
+      <point x="40.0" y="25.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="232.375" y="-146.5" />
+      <point x="3798.702035842947" y="2912.0" />
+      <point x="4453.8877785724335" y="2912.0" />
+      <point x="-53.25" y="103.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="lombok.Getter">
+      <point x="-101.33333333333348" y="-69.5" />
+      <point x="1458.0079070550685" y="1481.0" />
+      <point x="1278.7033617897225" y="1481.0" />
+      <point x="1278.7033617897225" y="269.0" />
+      <point x="3023.116556234167" y="269.0" />
+      <point x="-50.44444444444434" y="48.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.AccountController" target="yarchuk.coursework.justice.model.User">
+      <point x="-99.0" y="-91.5" />
+      <point x="165.6402879948323" y="2912.0" />
+      <point x="123.1402879948323" y="2912.0" />
+      <point x="123.1402879948323" y="1541.0" />
+      <point x="104.3902879948323" y="1541.0" />
+      <point x="-56.75" y="245.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.IssueTypeService" target="yarchuk.coursework.justice.model.IssueType">
+      <point x="40.0" y="-25.5" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="yarchuk.coursework.justice.model.Client">
+      <point x="108.33333333333326" y="201.5" />
+      <point x="3623.705823721735" y="2034.0" />
+      <point x="4092.0582331178884" y="2034.0" />
+      <point x="-71.4545454545455" y="-190.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.ClientController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="91.60000000000002" y="-157.5" />
+      <point x="4622.737778572434" y="2912.0" />
+      <point x="4560.3877785724335" y="2912.0" />
+      <point x="53.25" y="103.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.repository.SpecialityRepository" target="yarchuk.coursework.justice.model.Speciality">
+      <point x="-47.0" y="-25.5" />
+      <point x="466.0152879948323" y="1511.0" />
+      <point x="1073.2033617897225" y="1511.0" />
+      <point x="-78.0" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Client" target="javax.persistence.Entity">
+      <point x="-23.818181818181756" y="-190.5" />
+      <point x="4139.694596754252" y="2014.0" />
+      <point x="4110.061716566261" y="2014.0" />
+      <point x="4110.061716566261" y="620.0" />
+      <point x="2054.168621340783" y="620.0" />
+      <point x="58.28571428571422" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.IssueService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="-33.0" y="-25.5" />
+      <point x="3075.997490388402" y="2515.0" />
+      <point x="3057.330823721735" y="2515.0" />
+      <point x="14.833333333333258" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="org.springframework.stereotype.Controller">
+      <point x="-232.375" y="-146.5" />
+      <point x="3333.952035842947" y="2892.0" />
+      <point x="2963.4141570550687" y="2892.0" />
+      <point x="11.916666666666742" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="javax.persistence.Table">
+      <point x="-46.5" y="-135.5" />
+      <point x="2449.716240388402" y="750.0" />
+      <point x="2837.8422506786114" y="750.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Lawyer" target="javax.persistence.Entity">
+      <point x="67.55555555555566" y="-69.5" />
+      <point x="1626.8967959439576" y="1431.0" />
+      <point x="1587.9533617897225" y="1431.0" />
+      <point x="1587.9533617897225" y="710.0" />
+      <point x="1976.4543356264971" y="710.0" />
+      <point x="-19.42857142857156" y="26.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.IssueController" target="yarchuk.coursework.justice.model.Client">
+      <point x="105.625" y="-146.5" />
+      <point x="3671.952035842947" y="2882.0" />
+      <point x="4031.1377785724335" y="2882.0" />
+      <point x="4031.1377785724335" y="2535.0" />
+      <point x="4130.7627785724335" y="2535.0" />
+      <point x="-32.75" y="190.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Issue" target="yarchuk.coursework.justice.model.BaseEntity">
+      <point x="125.0" y="-201.5" />
+      <point x="3640.372490388402" y="1521.0" />
+      <point x="4035.186716566261" y="1521.0" />
+      <point x="4035.186716566261" y="830.0" />
+      <point x="4039.499216566261" y="830.0" />
+      <point x="29.4375" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.JusticeApplication" target="org.springframework.boot.autoconfigure.SpringBootApplication">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.ConsultationService" target="yarchuk.coursework.justice.model.Consultation">
+      <point x="-45.25" y="-25.5" />
+      <point x="2349.966240388402" y="1511.0" />
+      <point x="2460.7876689598306" y="1511.0" />
+      <point x="-35.42857142857156" y="135.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.сontroller.LawyerController" target="yarchuk.coursework.justice.model.Lawyer">
+      <point x="-90.375" y="-58.5" />
+      <point x="1838.591240388402" y="2862.0" />
+      <point x="1844.341240388402" y="2862.0" />
+      <point x="1844.341240388402" y="2054.0" />
+      <point x="1559.341240388402" y="2054.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.Consultation" target="yarchuk.coursework.justice.model.Issue">
+      <point x="106.28571428571422" y="135.5" />
+      <point x="2602.501954674116" y="1381.0" />
+      <point x="3440.372490388402" y="1381.0" />
+      <point x="-75.0" y="-201.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.service.LawyerService" target="yarchuk.coursework.justice.service.CrudService">
+      <point x="34.75" y="-25.5" />
+      <point x="1959.091240388402" y="2495.0" />
+      <point x="2968.330823721735" y="2495.0" />
+      <point x="-74.16666666666674" y="70.5" />
+    </edge>
+    <edge source="yarchuk.coursework.justice.model.BaseEntity" target="java.io.Serializable">
+      <point x="39.25" y="-69.5" />
+      <point x="4049.311716566261" y="389.0" />
+      <point x="4088.7172506786114" y="389.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3488776655443322" x="1143.26854326288" y="2599.069585020808" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

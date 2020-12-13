@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: shlap
+Build-Jdk: 11.0.4
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: org.yarchuk.cw
+Main-Class: ${start-class}
+

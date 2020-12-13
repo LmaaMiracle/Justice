@@ -1,0 +1,40 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'lawyers')}"
+>
+<head>
+    <title>Lawyer LogIn</title>
+</head>
+<body>
+
+<div th:if="${param.error}">
+    <center>
+        <h2 style="color: #e74c3c">Invalid username and password.</h2>
+    </center>
+</div>
+
+<form th:action="@{/login}" class="form" method="post">
+    <center>
+        <label class="col-sm-2 control-label" for="username"> Email </label>
+        <div class="col-sm-10">
+            <input id="username" class="form-control" type="email" name="username" required placeholder="username"
+                   style="width: 820px;"/>
+        </div>
+        <br><br>
+        <label class="col-sm-2 control-label" for="password"> Password </label>
+        <div class="col-sm-10">
+            <input id="password" class="form-control" type="password" name="password" required placeholder="password"
+                   style="width: 820px;"/>
+        </div>
+    </center>
+    <br><br>
+    <center>
+        <form>
+            <button type="submit" class=" btn-default" style="position: center; top: 50%; height: 40px;
+                width: 200px;"> Sign up
+            </button>
+        </form>
+    </center>
+</form>
+
+
+</body>
+</html>

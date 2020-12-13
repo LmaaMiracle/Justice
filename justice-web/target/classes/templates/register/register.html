@@ -1,0 +1,157 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'user')}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in</title>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container xd-container">
+        <script type="text/javascript" src="validation.js"></script>
+
+        <center>
+            <center>
+                <h1>Are you client? Want to apply for consultation?</h1>
+                <h1>Click the button below for quick applyment</h1>
+                <form action="/clients/find">
+                    <button class="btn-default" style="position: center; top: 50%; height: 50px;
+width: 200px; "> Apply for
+                        Consultation
+                    </button>
+                </form>
+            </center>
+            <br> <br> <br>
+
+            <h1>Are you a new employee?</h1>
+            <h1>Sign up</h1>
+        </center>
+
+        <center>
+            <button class="open-button; btn-default" style="position: center; top: 50%; height: 50px;
+        width: 200px;" onclick="openForm()">I'm a new employee!
+            </button>
+        </center>
+        <br><br>
+        <div class="form-popup" id="signup-form" style="display: none">
+            <form class="form" id="form" th:object="${user}" th:action="@{/register}" method="post">
+                <div class="control-group; form-group" id="lastNameGroup">
+
+                    <label class="col-sm-2 control-label" for="email">Email</label>
+                    <div class="col-sm-10">
+
+                        <input type="email" class="form-control" id="email" th:field="*{username}" placeholder="email"
+                               required
+                               style="width: 820px;"/> <br/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                            <p th:each="err : ${#fields.allErrors()}" th:text="${err}">incorrect email</p>
+                    </div>
+                </span>
+                    </div>
+
+
+                    <label class="col-sm-2 control-label" for="password">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="password" th:field="*{password}"
+                               placeholder="password"
+                               required
+                               style="width: 820px;"/>
+                        <br/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                            <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Password cant be empty</p>
+                    </div>
+                </span>
+                    </div>
+
+                    <label class="col-sm-2 control-label" for="speciality">Speciality</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="speciality" th:field="*{speciality}"
+                               placeholder="speciality" required
+                               style="width: 820px;"/>
+                        <br/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                        <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Speciality cannot be empty</p>
+                    </div>
+                </span>
+                    </div>
+
+                    <label class="col-sm-2 control-label" for="firstname">First name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="firstname" th:field="*{first_name}" placeholder="first name"
+                               required
+                               style="width: 820px;"/>
+                        <br/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                            <p th:each="err : ${#fields.allErrors()}" th:text="${err}">cant be empty</p>
+                    </div>
+                </span>
+                    </div>
+
+
+                    <label class="col-sm-2 control-label" for="lastname">Last name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="lastname" th:field="*{last_name}" placeholder="last name"
+                               required
+                               style="width: 820px;"/> <br/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="help-inline">
+                    <div th:if="${#fields.hasAnyErrors()}">
+                            <p th:each="err : ${#fields.allErrors()}" th:text="${err}">cant be empty</p>
+                     </div>
+                </span>
+                    </div>
+                </div>
+                <center>
+                    <form action="/login">
+                        <button type="submit" class=" btn-default" onsubmit="return checkInputs()" style="position: center; top: 50%; height: 40px;
+                width: 200px;"> Sign up
+                        </button>
+                    </form>
+                </center>
+                <br><br>
+
+                <button type="button" class="btn-inverse" style="position: center; top: 50%; height: 40px;
+            width: 155px;" onclick="closeForm()">Close
+                </button>
+            </form>
+        </div>
+
+        <br><br>
+        <center>
+            <br> <br>
+            <h1>Already have an account?</h1>
+            <form action="/login">
+                <button class="btn-default" style="position: center; top: 50%; height: 50px;
+            width: 200px; ">
+                    Sign in
+                </button>
+            </form>
+        </center>
+
+        <script>
+            function closeForm() {
+                document.getElementById("signup-form").style.display = "none";
+            }
+
+            function openForm() {
+                document.getElementById("signup-form").style.display = "block";
+            }
+        </script>
+
+    </div>
+</div>
+</body>
+</html>

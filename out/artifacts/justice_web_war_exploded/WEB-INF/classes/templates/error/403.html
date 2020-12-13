@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'error')}">
+<title>Forbidden error</title>
+<body>
+<h1>Sorry, you don't have permission to view this page :(</h1>
+<center>
+    <img th:src="@{resources/images/oops.jpg}"/>
+</center>
+</body>
+
+</html>

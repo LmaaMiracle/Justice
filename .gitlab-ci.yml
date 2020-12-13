@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - docker login --username $DOCKERHUB_USER -p $DOCKERHUB_PASS
+  tags:
+    - docker
+  script:
+    - docker build -t lmaamiracle/justice:$CI_PIPELINE_ID .
+    - docker push lmaamiracle/justice:$CI_PIPELINE_ID
+
+deploy:
+  stage: deploy
+  tags:
+    - docker
+  script:
+    - mkdir -p ~/.ssh
+    - echo "$AWS_SSH_KEY" > ~/.ssh/id_rsa
+    - ssh-keyscan $EC2_IP
+    - docker rm -f app || true
+    - >
+      docker run -d --name=app -e DATABASE_URL=$DATABASE_HOST -e DATABASE_USERNAME=$DATABASE_USER -e DATABASE_PASSWORD=$DATABASE_PASSWORD --network justice -p80:8081 lmaamiracle/justice:$CI_PIPELINE_ID

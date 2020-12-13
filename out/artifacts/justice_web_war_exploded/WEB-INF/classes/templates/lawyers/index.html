@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'lawyers')}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Lawyers</title>
+</head>
+<body>
+<!--/*@thymesVar id="lawyer" type="yarchuk.coursework.justice.model.Lawyer"*/-->
+<h2>Lawyers</h2>
+
+<table id="lawyers" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Specialties</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="lawyer : ${lawyers}">
+        <td th:text="${lawyer.firstName + ' ' + lawyer.lastName}"></td>
+        <td>
+        <span th:each="specialty : ${lawyer.specialities}"
+              th:text="${specialty.description + ' '}"/>
+            <span
+                    th:if="${lawyer?.specialities?.size() == 0}">none</span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

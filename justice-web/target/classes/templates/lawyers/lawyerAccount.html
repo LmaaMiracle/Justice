@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'users')}"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Lawyers</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container xd-container">
+        <center><h2>Lawyer Account</h2>
+        </center>
+
+        <form th:action="@{/lawyerAccount}" method="get">
+            <table id="lawyers" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Lawyer name</th>
+                    <th>Speciality</th>
+                    <th>e-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:object="${user}" th:action="@{/login}">
+                    <td th:text="${user.first_name + ' ' + user.last_name}"></td>
+                    <td th:text="${user.speciality}"></td> <!--SPECITALITY -->
+                    <td th:text="${user.username}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <br><br>
+
+
+        <center>
+            <h1>Search for clients</h1>
+            <form action="/clients/">
+                <div class="form-group">
+                    <!--            <div class="col-sm-offset-2 col-sm-10">-->
+                    <button type="submit" class="btn btn-default" style="position: center; top: 50%; height: 50px;
+        width: 175px;" th:method="get">
+                        Clients list
+                    </button>
+                    <!--            </div>-->
+                </div>
+            </form>
+        </center>
+        <br><br><br>
+        <form th:method="post" th:action="@{/logout}">
+            <button sec:authorize="isAuthenticated()" class="btn-default; glyphicon glyphicon-log-out" type="submit"
+                    style="position: center; top: 50%; height: 25px;
+        width: 120px;">
+                Logout
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

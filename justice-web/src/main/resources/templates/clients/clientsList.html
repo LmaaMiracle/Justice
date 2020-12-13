@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'clients')}">
+
+<body>
+<div class="container-fluid">
+    <div class="container xd-container">
+        <h2>Clients</h2>
+
+        <table id="lawyers" class="table table-striped">
+            <thead>
+            <tr>
+                <th style="width: 150px;">Name</th>
+                <th>City</th>
+                <th style="width: 120px">Telephone</th>
+                <th>Issues</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="client : ${selections}">
+                <td>
+                    <a th:href="@{/clients/__${client.id}__}"
+                       th:text="${client.firstName + ' ' + client.lastName}"/></a>
+                </td>
+                <td th:text="${client.city}"/>
+                <td th:text="${client.telephone}"/>
+                <td>
+                    <span th:each="issue : ${client.issues}" th:text="${issue.description} "/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

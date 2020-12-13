@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      th:replace="~{fragments/layout :: layout (~{::body},'clients')}">
+
+<body>
+
+
+<h2>Client Information</h2><br><br>
+
+<div th:object="${client}">
+    <h2 style="color: darkgoldenrod">NOTE:</h2>
+    <h2 th:text="*{'Your profile code is: ' + authCode}" style="color: crimson"></h2>
+    <h2>Save it. You'll ned this to find your profile in database!</h2>
+</div><br><br>
+
+<table class="table table-striped" th:object="${client}">
+    <tr>
+        <th>Name</th>
+        <td><b th:text="*{firstName + ' ' + lastName}"></b></td>
+    </tr>
+    <tr>
+        <th>City</th>
+        <td th:text="*{city}">
+        </td>
+    </tr>
+    <tr>
+        <th>Telephone</th>
+        <td th:text="*{telephone}">
+        </td>
+    </tr>
+</table>
+
+<a th:href="@{/clients/{id}/edit(id=${client.id})}" class="btn btn-default">Edit
+    Client</a>
+<a th:href="@{/clients/{id}/issues/new(id=${client.id})}" class="btn btn-default">Add
+    New Issue</a>
+
+<br/>
+<br/>
+<br/>
+<h2>Issues and Consultations</h2>
+
+<table class="table table-striped">
+
+    <tr th:each="issue : ${client.issues}">
+        <td valign="top">
+            <dl class="dl-horizontal">
+                <dt>Name</dt>
+                <!--/*@thymesVar id="description" type="yarchuk.coursework.justice.model.Issue"*/-->
+                <dd th:text="${issue.description}"></dd>
+                <dt>Occur Date</dt>
+                <dd th:text="${#temporals.format(issue.applicationDate, 'yyyy-MM-dd')}"></dd>
+
+                <dt>Type</dt>
+                <dd th:text="${issue.issueType}"></dd>
+            </dl>
+        </td>
+        <td valign="top">
+            <table class="table-condensed">
+                <thead>
+                <tr>
+                    <th>Consultation Date</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tr th:each="consultation : ${issue.consultations}">
+                    <td th:text="${#temporals.format(consultation.date, 'yyyy-MM-dd')}"></td>
+                    <td th:text="${consultation?.description}"></td>
+                </tr>
+                <tr>
+                    <td><a
+                            th:href="@{clients/{clientId}/issues/{issueId}/edit(clientId=${client.id},issueId=${issue.id})}">Edit
+                        Issue</a></td>    <!--TODO!!!! -->
+                    <td><a sec:authorize="isAuthenticated()"
+                            th:href="@{clients/{clientId}/issues/{issueId}/consultations/new(clientId=${client.id},issueId=${issue.id})}">Add
+                        Consultation</a></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
