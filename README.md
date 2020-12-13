@@ -3,7 +3,7 @@
 
 
 # Technology stack:
-- java 8
+- Java 8
 - Spring Boot (MVC)
 - Spring Security
 - Spring Data JPA
